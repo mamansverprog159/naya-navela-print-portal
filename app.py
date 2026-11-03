@@ -144,8 +144,16 @@ def payment(oid):
     if method == "UPI":
         return page("""
         <h2>Pay using Navi UPI</h2>
-        <p>UPI QR will be added here in the next step.</p>
-        <p>After payment, shop owner will verify it.</p>
+<h2>Pay using Navi UPI</h2>
+
+<img src="/static/navi-qr.jpeg"
+     alt="Navi UPI QR Code"
+     style="width:100%;max-width:350px;display:block;margin:auto;">
+
+<h3>UPI ID</h3>
+<p>niteshhd60149@naviaxis</p>
+
+<p>Payment करने के बाद दुकान मालिक को सूचित करें।</p>        <p>After payment, shop owner will verify it.</p>
         """)
     return page("<h2>Cash Selected</h2><p>Please pay at the shop counter.</p>")
 
